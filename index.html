@@ -17,7 +17,7 @@
 
      <script>
         function App() {
-            const time = new Date().toLocalTimeString();
+            const [time, setTime] = React.useState(new Date().toLocalTimeString());
 
             return React.createElement("header", null, `Hello React! It's ${time}`);
         }
